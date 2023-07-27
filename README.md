@@ -8,4 +8,3 @@
    ```
    docker run -it --rm --name {container_name} -v $(pwd):/home/development {image_name} bash
    ```
-3. dfadfadf
