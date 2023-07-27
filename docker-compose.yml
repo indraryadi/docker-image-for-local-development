@@ -7,7 +7,7 @@ services:
     volumes:
       - .:/home/development:rw
     expose:
-      - 5000
+      - 5000 # port of running service
     ports:
       - 5000:5000
-    command: node index.js
+    command: node index.js # command to run the service
