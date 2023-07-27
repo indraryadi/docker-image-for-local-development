@@ -1,5 +1,6 @@
 services:
   node:
+    image: node-dev:custom
     container_name: node-dev
     build:
       context: .
@@ -7,7 +8,7 @@ services:
     volumes:
       - .:/home/development:rw
     expose:
-      - 5000 # port of running service
+      - 4000
     ports:
-      - 5000:5000
-    command: node index.js # command to run the service
+      - 4000:4000
+    command: node index.js
