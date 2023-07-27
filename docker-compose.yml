@@ -1,0 +1,13 @@
+services:
+  node:
+    container_name: node-dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/home/development:rw
+    expose:
+      - 5000
+    ports:
+      - 5000:5000
+    command: node index.js
