@@ -1,0 +1,6 @@
+FROM postgres:15
+
+ENV POSTGRES_USER=kira
+ENV POSTGRES_PASSWORD=password
+ENV POSTGRES_DB=test_db
+
