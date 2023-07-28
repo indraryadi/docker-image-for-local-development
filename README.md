@@ -10,7 +10,7 @@ How to use:
    docker run -it --rm --name {container_name} -v $(pwd):/home/development {image_name} bash/ash
    ``` 
 3. then create the basic service of (express/react/next/etc)
-4. after create the service, change the port and command on docker-compose
+4. after create the service, change the port and uncomment the command on docker-compose
    ```
    expose:
       - 5000 # replace with your service port
